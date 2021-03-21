@@ -291,7 +291,10 @@ function App(props) {
 
         <Menu style={{ textAlign:"center" }} selectedKeys={[route]} mode="horizontal">
           <Menu.Item key="/">
-            <Link onClick={()=>{setRoute("/")}} to="/">YourCollectibles</Link>
+            <Link onClick={()=>{setRoute("/")}} to="/">AsciiNFT</Link>
+          </Menu.Item>
+          <Menu.Item key="/mint">
+            <Link onClick={()=>{setRoute("/mint")}} to="/mint">Mint</Link>
           </Menu.Item>
           <Menu.Item key="/transfers">
             <Link onClick={()=>{setRoute("/transfers")}} to="/transfers">Transfers</Link>
